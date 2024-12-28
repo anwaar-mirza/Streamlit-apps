@@ -2,10 +2,10 @@ import streamlit as st
 import mysql.connector
 def connection(**kwargs):
     db_connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="metaviz"  
+    host="sql12.freesqldatabase.com",
+    user="sql12754553",
+    password="xsSDGidrJq",
+    database="sql12754553"  
     )
     cursor = db_connection.cursor()
     insert_query = "INSERT INTO emp_data (name, father, age, cnic, cnic_issue, cnic_expiry, contact, kin, kin_relation, kin_contact, kin_cnic, address) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
